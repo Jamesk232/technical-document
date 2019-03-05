@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Technical Document</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<main id="main-doc">
+
+		<nav id="navbar">
+			<header id="doc_topic">CSS Layout</header>
+			<ul id="menu">
+				<a class="nav-link" href="#The_Float_Property"><li>The Float Property</li></a>
+				<a class="nav-link" href="#The_Clear_Property"><li>The Clear Property</li></a>
+				<a class="nav-link" href="#Images_side_by_side"><li>Images Side by Side</li></a>
+				<a class="nav-link" href="#Overflow"><li>Overflow</li></a>
+				<a class="nav-link" href="#source"><li>source</li></a>
+			</ul>
+		</nav>
+
+		<section id="The_Float_Property" class="main-section">
+			<header class="section-header">The Float Property</header>
+			<p>
+				The <code style="color: red;">float</code> property is used for positioning and formatting content e.g. let an image float left to the text in a container.
+			</p>
+			<p>
+				The float property can have one of the following values:
+			</p>
+			<ul class="section-list">
+				<li>left - The element floats to the left of its container</li>
+				<li>right - The element floats to the right of its container</li>
+				<li>none - The element does not float (will be displayed just where it occurs in the text). This is default</li>
+				<li>inherit - The element inherits the float value of its parent</li>
+			</ul>
+			<p>In its simplest use, the <code style="color: red;">float</code> property can be used to wrap text.</p>
+			<p><span style="font-weight: bold;">Example</span></p>
+			<code style="background-color: orange; padding: 5px;">
+			.example-image {
+					  float: right;
+				}
+			</code>
+			<div class="example">
+				<p><img class="example-image" src="https://source.unsplash.com/dHiuj1bizVo" style="width: 170px; height: 170px; margin-left: 10px; float: right;">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</section>
+		<section id="The_Clear_Property" class="main-section">
+			<header class="section-header">The Clear Property</header>
+			<p>The <code style="color: red;">clear</code> property specifies what elements can float beside the cleared element and on which side.</p>
+			<p>The <code style="color: red;">clear</code> property can have one of the following values:</p>
+			<ul class="section-list">
+				<li>none - Allows floating elements on both sides. This is default</li>
+				<li>left - No floating elements allowed on the left side</li>
+				<li>right- No floating elements allowed on the right side</li>
+				<li>both - No floating elements allowed on either the left or the right side</li>
+				<li>inherit - The element inherits the clear value of its parent</li>
+			</ul>
+			<p>The most common way to use the <code style="color: red;">clear</code> property is after you have used a <code style="color: red;">float</code> property on an element.</p>
+			<p>When clearing floats, you should match the clear to the float: If an element is floated to the left, then you should clear to the left. Your floated element will continue to float, but the cleared element will appear below it on the web page.</p>
+		</section>
+		<section id="Images_side_by_side" class="main-section">
+			<header class="section-header">Images side by side</header>
+		</section>
+		<section id="Overflow" class="main-section">
+			<header class="section-header">Overflow</header>
+		</section>
+		<section id="source" class="main-section">
+			<header class="section-header">source</header>
+		</section>
+	</main>
+</body>
+</html>
